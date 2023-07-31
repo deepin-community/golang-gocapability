@@ -1,5 +1,9 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-gocapability (0.0~git20150507-1) UNRELEASED; urgency=low
 
-  * Initial release
+  [ Tim Potter ]
+  * Initial release (Closes: #784731)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 02 Apr 2018 21:30:18 -0400
