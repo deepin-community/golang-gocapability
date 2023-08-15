@@ -1,23 +1,28 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: gocapability
 Source: https://github.com/syndtr/gocapability
 
 Files: *
-Copyright: 2013 Suryandaru Triandana
-License: BSD-2-Clause
- Copyright 2013 Suryandaru Triandana <syndtr@gmail.com>
- All rights reserved.
- .
+Copyright: 2013, Suryandaru Triandana <syndtr@gmail.com>
+License: BSD-2-clause
+
+Files: debian/*
+Copyright: 2013-2014 Johan Euphrosine <proppy@google.com>,
+ 2015 Tianon Gravi <admwiggin@gmail.com>
+License: BSD-2-clause
+Comment: the Debian packaging is licensed under the same terms as the original package.
+
+License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are
  met:
  .
-     * Redistributions of source code must retain the above copyright
+ * Redistributions of source code must retain the above copyright
  notice, this list of conditions and the following disclaimer.
-     * Redistributions in binary form must reproduce the above copyright
+ * Redistributions in binary form must reproduce the above copyright
+ .
  notice, this list of conditions and the following disclaimer in the
  documentation and/or other materials provided with the distribution.
- .
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
@@ -29,22 +34,3 @@ License: BSD-2-Clause
  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Files: debian/*
-Copyright: 2015 Tim Potter <tpot@hp.com>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
- .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
