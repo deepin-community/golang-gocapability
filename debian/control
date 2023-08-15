@@ -1,17 +1,26 @@
-Source: golang-gocapability
+Source: golang-gocapability-dev
 Section: devel
-Priority: extra
-Maintainer: pkg-go <pkg-go-maintainers@lists.alioth.debian.org>
-Uploaders: Tim Potter <tpot@hp.com>
-Build-Depends: debhelper (>= 9), dh-golang, golang-go
-Standards-Version: 3.9.6
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Johan Euphrosine <proppy@google.com>,
+           Tim Potter <tpot@hpe.com>,
+           Dmitry Smirnov <onlyjob@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
 Homepage: https://github.com/syndtr/gocapability
-Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-gocapability
-Vcs-Git: https://salsa.debian.org/go-team/packages/golang-gocapability.git
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-gocapability-dev.git
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-gocapability-dev
+XS-Go-Import-Path: github.com/syndtr/gocapability
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-go
 
 Package: golang-gocapability-dev
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, golang-go
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Multi-Arch: foreign
 Description: Utilities for manipulating POSIX capabilities in Go
- Utilities for manipulating and checking POSIX capabilities in 
- the Go language.
+ This package capability provides utilities for manipulating POSIX
+ capabilities in Go. Currently only Linux capabilities are supported.
